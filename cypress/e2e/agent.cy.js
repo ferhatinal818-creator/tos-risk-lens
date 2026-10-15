@@ -6,6 +6,6 @@ describe('page-agent tıklama koruması', () => {
     cy.document().its('body').should(($b) => expect($b[0].dataset.baited).to.equal(undefined)); // tıklanmadı
     cy.tid('agent-blocked').should('have.length.gte', 1).and('contain.text', 'Accept all');
     cy.get('#acc').should('have.attr', 'aria-expanded', 'true');
-    cy.contains('[data-testid="finding"]', /tahkim/i).should('exist');
+    cy.tid('finding').should(($f) => expect($f.text()).to.match(/tahkim/i));
   });
 });

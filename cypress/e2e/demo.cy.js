@@ -37,7 +37,7 @@ describe('ToS Risk Lens — demo', () => {
     cy.caption('Sistem “emin değilim” diyor ve nedenini yazıyor');
     cy.tid('uncertainties').scrollIntoView().should('be.visible');
     cy.tid('uncertainty-item').should('have.length.gte', 4);
-    cy.contains('[data-testid="uncertainty-item"]', 'Veri paylaşımının kapsamı').should('be.visible');
+    cy.tid('uncertainty-item').should(($li) => expect($li.text()).to.contain('Veri paylaşımının kapsamı')); // cy.contains+shadow DOM güvenilmez
     cy.tid('low-confidence').should('have.length.gte', 1);
     pause(3000);
 
