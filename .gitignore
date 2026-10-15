@@ -1,0 +1,6 @@
+eval/corpus/
+eval/runs/
+node_modules/
+dist/
+cypress/videos/
+cypress/screenshots/

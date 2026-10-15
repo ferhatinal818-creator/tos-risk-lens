@@ -1,0 +1,33 @@
+{
+  "total": {
+    "tried": 553,
+    "rejected": 553
+  },
+  "stats": {
+    "kelime_degistir": {
+      "tried": 116,
+      "rejected": 116,
+      "falselyAccepted": []
+    },
+    "es_anlamli_yeniden_yaz": {
+      "tried": 89,
+      "rejected": 89,
+      "falselyAccepted": []
+    },
+    "iki_cumleyi_birlestir": {
+      "tried": 116,
+      "rejected": 116,
+      "falselyAccepted": []
+    },
+    "sonu_kes_uydur": {
+      "tried": 116,
+      "rejected": 116,
+      "falselyAccepted": []
+    },
+    "turkceye_cevir": {
+      "tried": 116,
+      "rejected": 116,
+      "falselyAccepted": []
+    }
+  }
+}

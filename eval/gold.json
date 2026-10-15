@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "annotation": {
+    "annotator": "tek anotatör (Claude); etiketler sistem çıktısı görülmeden, metinler okunarak yazıldı",
+    "guidelines": "must = tüketici açısından belirgin dezavantaj/dikkat çekici madde; sistemin yakalaması beklenir (kaçırılırsa 'kaçırılan'). borderline = dengeli/standart/koşullu madde; yakalanırsa da kaçırılırsa da cezalandırılmaz. trap = olumsuzlama/koruyucu cümle; aynı kategoride bulgu üretilirse 'tuzağa düşme' (yanlış alarm) sayılır.",
+    "matching": "Bir bulgu, aynı kategoride ve altın alıntının ±150 karakter çevresiyle kesişiyorsa eşleşmiş sayılır."
+  },
+  "docs": {
+    "mastodon-tos": {
+      "must": [
+        { "id": "M1", "category": "arbitration_class_waiver", "quote": "you and the company will resolve any dispute by binding American Arbitration Association arbitration" },
+        { "id": "M2", "category": "liability_limitation", "quote": "the total liability to you for claims of any kind that are related to the forum or content on the forum will be limited to $50" },
+        { "id": "M3", "category": "liability_limitation", "quote": "You accept all risk of using the forum and content on the forum. As far as the law allows, the company and its suppliers provide the forum as is, without any warranty whatsoever." },
+        { "id": "M4", "category": "indemnification", "quote": "You agree to indemnify the company from legal claims by others related to your breach of these terms" },
+        { "id": "M5", "category": "jurisdiction", "quote": "German law will govern any dispute related to these terms or your use of the forum." },
+        { "id": "M6", "category": "account_termination", "quote": "The company reserves the right to change, redact, and delete content on the forum for any reason." }
+      ],
+      "borderline": [
+        { "id": "Mb1", "category": "account_termination", "quote": "The company may restrict, suspend, or close your account on the forum according to its policy for handling copyright-related takedown requests" },
+        { "id": "Mb2", "category": "content_license", "quote": "That special license allows the company to copy, publish, and analyze content you submit to the forum." },
+        { "id": "Mb3", "category": "unilateral_change", "quote": "Once you get notice of an update to these terms, you must agree to the new terms in order to keep using the forum." },
+        { "id": "Mb4", "category": "account_termination", "quote": "Either you or the company may end the agreement written out in these terms at any time." },
+        { "id": "Mb5", "category": "liability_limitation", "quote": "You agree that the company will not be liable to you for those violations or their consequences." },
+        { "id": "Mb6", "category": "other_risk", "quote": "The company may assign your agreement to any affiliate of the company" },
+        { "id": "Mb7", "category": "arbitration_class_waiver", "quote": "You will settle any dispute as an individual, and not as part of a class action or other representative proceeding" },
+        { "id": "Mb8", "category": "liability_limitation", "quote": "Neither the company nor its suppliers will be liable to you for breach-of-contract damages their personnel could not have reasonably foreseen" }
+      ],
+      "traps": []
+    },
+    "bereal-tos": {
+      "must": [
+        { "id": "B1", "category": "content_license", "quote": "you grant us a worldwide, non-exclusive, royalty-free and sublicensable licence to use, copy, reproduce, process, adapt, modify, publish, transmit, display and distribute the content you share globally in any media or distribution methods" },
+        { "id": "B2", "category": "data_sharing", "quote": "we must collect, use, store, process, share and transfer this information in the countries where we operate our services and to the partners who help us provide our services" },
+        { "id": "B3", "category": "fee_change", "quote": "BeReal reserves the right to modify the price of the \"No Ads\" subscription at any time." },
+        { "id": "B4", "category": "liability_limitation", "quote": "the liability of BeReal, its affiliates, related companies, officers, directors, employees, agents, representatives, partners and licensors is limited to the maximum extent permitted in your country of residence" },
+        { "id": "B5", "category": "jurisdiction", "quote": "you and BeReal consent to the exclusive jurisdiction of the courts of Paris and French law" },
+        { "id": "B6", "category": "unilateral_change", "quote": "BeReal may update the user agreement at any time." },
+        { "id": "B7", "category": "consent_by_use", "quote": "if you use our services, you agree to be bound by the terms of service" },
+        { "id": "B8", "category": "account_termination", "quote": "BeReal reserves the right to permanently delete your account in the event of prolonged inactivity." }
+      ],
+      "borderline": [
+        { "id": "Bb1", "category": "account_termination", "quote": "Any permanent termination results in a ban from creating a new account." },
+        { "id": "Bb2", "category": "content_license", "quote": "some people may choose to share their friends-only content with BeReal so that it can be used for communication, commerce and marketing purposes" },
+        { "id": "Bb3", "category": "liability_limitation", "quote": "BeReal cannot be held responsible for the consequences, including loss of access to your account, resulting from failure to update your phone number." },
+        { "id": "Bb4", "category": "other_risk", "quote": "BeReal may occasionally send you promotional SMS messages" },
+        { "id": "Bb5", "category": "other_risk", "quote": "BeReal is free to use any feedback, comments or suggestions you may provide regarding our services." },
+        { "id": "Bb6", "category": "consent_by_use", "quote": "By using our services, you understand and agree that we must collect" }
+      ],
+      "traps": []
+    },
+    "pinterest-tos": {
+      "must": [
+        { "id": "P1", "category": "content_license", "quote": "you grant us and our affiliates and service providers, and our users, a non-exclusive, royalty-free, transferable, sublicensable, worldwide licence to use, store, publicly perform or display, reproduce, save, modify, create derivative works, monetise, download, translate and distribute your User Content" },
+        { "id": "P2", "category": "data_collection_tracking", "quote": "we show you things we think will be relevant, interesting and personal to you based on your on-site and off-site activity" },
+        { "id": "P3", "category": "data_retention", "quote": "We and our users may retain and continue to use, store, display, reproduce, save, modify, create derivative works, perform and distribute any of your User Content that you or other users have stored or shared on Pinterest." },
+        { "id": "P4", "category": "liability_limitation", "quote": "In no event shall our aggregate liability for all claims relating to the Service exceed one hundred US dollars (US $100.00)." },
+        { "id": "P5", "category": "liability_limitation", "quote": "the Service and all content on Pinterest is provided on an 'as is' basis without warranty of any kind" },
+        { "id": "P6", "category": "arbitration_class_waiver", "quote": "you and we each agree to resolve any claim, dispute or controversy arising out of or relating to these Terms or the Service through binding arbitration" },
+        { "id": "P7", "category": "jurisdiction", "quote": "these Terms and your use of the Service shall be governed by the laws of the State of California" },
+        { "id": "P8", "category": "unilateral_change", "quote": "We may revise, add or remove any or all portions of these Terms from time to time" },
+        { "id": "P9", "category": "account_termination", "quote": "We reserve the right to remove, limit distribution of or modify User Content, or change the way it’s used on Pinterest." },
+        { "id": "P10", "category": "consent_by_use", "quote": "By accessing or using Pinterest, you agree to comply with and be bound by these Terms" },
+        { "id": "P11", "category": "liability_limitation", "quote": "we shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues" }
+      ],
+      "borderline": [
+        { "id": "Pb1", "category": "indemnification", "quote": "you agree to indemnify and hold harmless Pinterest, Inc., Pinterest Europe Ltd. and their affiliates from any claims" },
+        { "id": "Pb2", "category": "arbitration_class_waiver", "quote": "All disputes must be brought in the party's individual capacity and not as a member in any class or representative proceeding." },
+        { "id": "Pb3", "category": "account_termination", "quote": "We may terminate or suspend your right to access or use Pinterest for any violation of these Terms." },
+        { "id": "Pb4", "category": "liability_limitation", "quote": "We will have no liability for any change to Pinterest or any suspension or termination of your access to or use of Pinterest." },
+        { "id": "Pb5", "category": "liability_limitation", "quote": "you do so at your own risk and you agree that we have no liability arising from your use of, purchase from or access to any third-party website" },
+        { "id": "Pb6", "category": "other_risk", "quote": "may be assigned by us without restriction" },
+        { "id": "Pb7", "category": "other_risk", "quote": "you agree that we have no obligation to keep your feedback confidential or to compensate you for the feedback" },
+        { "id": "Pb8", "category": "account_termination", "quote": "you will not create a new Pinterest account without our express written permission, which is provided at our sole discretion" },
+        { "id": "Pb9", "category": "data_retention", "quote": "we may keep your User Content for a reasonable period of time for backup, archival or audit purposes" },
+        { "id": "Pb10", "category": "unilateral_change", "quote": "Your continued access to or use of Pinterest after such an update constitutes your binding acceptance of such changes." },
+        { "id": "Pb11", "category": "liability_limitation", "quote": "we can’t guarantee that unauthorised third parties won’t be able to defeat our security measures" }
+      ],
+      "traps": []
+    },
+    "instagram-tos": {
+      "must": [
+        { "id": "I1", "category": "data_sharing", "quote": "Instagram is part of the Meta Companies, which share technology, systems, insights, and information-including the information we have about you" },
+        { "id": "I2", "category": "data_collection_tracking", "quote": "we use information from Instagram and other Meta Company Products, as well as from external partners, to personalize your experience on Instagram" },
+        { "id": "I3", "category": "content_license", "quote": "you hereby grant to us a non-exclusive, transferable, sub-licensable, worldwide license to host, use, distribute, modify, run, copy, publicly perform or display, translate, and create derivative works of your content" },
+        { "id": "I4", "category": "content_license", "quote": "can be used next to or in connection with accounts, ads (if we show you ads on Meta Products), offers, and other sponsored content that you follow or engage with that are displayed on Meta Products, without any compensation to you" },
+        { "id": "I5", "category": "liability_limitation", "quote": "Without limiting any of the above, we shall be liable for slight negligence only in the case of violation of an \"essential\" obligation under this agreement." }
+      ],
+      "borderline": [
+        { "id": "Ib1", "category": "data_sharing", "quote": "We also may share information about misuse or harmful content with other Meta Companies or law enforcement." },
+        { "id": "Ib2", "category": "data_retention", "quote": "After the content is deleted, it may take us up to another 90 days to remove it from backups and disaster recovery systems." },
+        { "id": "Ib3", "category": "data_retention", "quote": "where your content has been used by others in accordance with this license and they have not deleted it" },
+        { "id": "Ib4", "category": "ai_training_use", "quote": "Technologies like artificial intelligence and machine learning give us the power to apply complex processes across our Service." },
+        { "id": "Ib5", "category": "unilateral_change", "quote": "Then, if you continue to access or use the Service you will be bound by the updated Terms." },
+        { "id": "Ib6", "category": "account_termination", "quote": "we may – without prejudice of our termination right for good cause – completely or partially refuse to provide or stop providing the Service to you" },
+        { "id": "Ib7", "category": "jurisdiction", "quote": "any such claim or dispute must be resolved in a competent court in Ireland and that Irish law will apply" },
+        { "id": "Ib8", "category": "consent_by_use", "quote": "If you do not agree to these Terms, then do not access or use Instagram." },
+        { "id": "Ib9", "category": "data_sharing", "quote": "we must store and transfer data across our systems around the world, including outside of your country of residence" },
+        { "id": "Ib10", "category": "other_risk", "quote": "Our rights and obligations can be assigned to others." },
+        { "id": "Ib11", "category": "other_risk", "quote": "may use them without any restrictions or obligation to compensate you for them" },
+        { "id": "Ib12", "category": "other_risk", "quote": "we may change it if we believe it is appropriate or necessary" },
+        { "id": "Ib13", "category": "data_collection_tracking", "quote": "based on things that you and others do on and off Instagram" }
+      ],
+      "traps": [
+        { "id": "It1", "category": "data_sharing", "quote": "We don't sell your information." },
+        { "id": "It2", "category": "data_sharing", "quote": "We don’t share information that directly identifies you" }
+      ]
+    },
+    "spotify-tos": {
+      "must": [
+        { "id": "S1", "category": "consent_by_use", "quote": "By signing up for, or otherwise using, the Spotify Service, you agree to these Terms." },
+        { "id": "S2", "category": "arbitration_class_waiver", "quote": "will be determined by binding individual (not class) arbitration" },
+        { "id": "S3", "category": "arbitration_class_waiver", "quote": "each party may bring claims (whether in court or in arbitration) against the other only in an individual capacity" },
+        { "id": "S4", "category": "jurisdiction", "quote": "are governed by and shall be construed in accordance with the laws of the state of New York" },
+        { "id": "S5", "category": "liability_limitation", "quote": "THE SPOTIFY SERVICE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE,\" WITHOUT ANY WARRANTIES OF ANY KIND" },
+        { "id": "S6", "category": "liability_limitation", "quote": "YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY PROBLEMS OR DISSATISFACTION WITH THE SPOTIFY SERVICE IS TO UNINSTALL ANY SPOTIFY SOFTWARE AND TO STOP USING THE SPOTIFY SERVICE" },
+        { "id": "S7", "category": "liability_limitation", "quote": "AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SPOTIFY SERVICE, THIRD-PARTY APPLICATIONS, OR THIRD-PARTY APPLICATION CONTENT MORE THAN THE GREATER OF (A) THE AMOUNTS PAID BY YOU TO SPOTIFY DURING THE TWELVE MONTHS PRIOR TO THE FIRST CLAIM; OR (B) $30.00" },
+        { "id": "S8", "category": "liability_limitation", "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT BELOW) WITHIN ONE (1) YEAR" },
+        { "id": "S9", "category": "indemnification", "quote": "You agree to indemnify and hold Spotify harmless from and against all damages, losses, and expenses of any kind" },
+        { "id": "S10", "category": "content_license", "quote": "you hereby grant to Spotify a non-exclusive, transferable, sublicensable, royalty-free, fully paid, irrevocable, worldwide license to reproduce, make available, perform and display, translate, modify, create derivative works from, distribute, and otherwise use any such User Content" },
+        { "id": "S11", "category": "auto_renewal", "quote": "Paid Subscriptions continue indefinitely until cancelled." },
+        { "id": "S12", "category": "fee_change", "quote": "by continuing to use the Spotify Service after the price change takes effect, you will have accepted the new price" },
+        { "id": "S13", "category": "no_refund", "quote": "we do not provide refunds or credits for any partial subscription periods" },
+        { "id": "S14", "category": "unilateral_change", "quote": "Spotify reserves the right to change our Spotify Service offerings and their availability from time to time, without notice or liability to you." },
+        { "id": "S15", "category": "unilateral_change", "quote": "Your use of the Spotify Service following any changes to these Terms will constitute your acceptance of such changes." },
+        { "id": "S16", "category": "account_termination", "quote": "Spotify reserves the right to remove or disable access to any User Content for any or no reason." },
+        { "id": "S17", "category": "other_risk", "quote": "to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify Service" }
+      ],
+      "borderline": [
+        { "id": "Sb1", "category": "arbitration_class_waiver", "quote": "THESE TERMS CONTAIN A MANDATORY ARBITRATION PROVISION" },
+        { "id": "Sb2", "category": "arbitration_class_waiver", "quote": "the parties agree to waive any right to a jury trial" },
+        { "id": "Sb3", "category": "arbitration_class_waiver", "quote": "You agree to this process even though it may delay the arbitration of your case." },
+        { "id": "Sb4", "category": "content_license", "quote": "you also agree to waive, and not to enforce, any \"moral rights\" or equivalent rights" },
+        { "id": "Sb5", "category": "no_refund", "quote": "Spotify will not refund any amounts that you have already paid." },
+        { "id": "Sb6", "category": "account_termination", "quote": "Spotify may reclaim, or require you to change, your username for any reason." },
+        { "id": "Sb7", "category": "account_termination", "quote": "we reserve the right to terminate a Paid Subscription at any time, on no less than 14 days' notice to you" },
+        { "id": "Sb8", "category": "account_termination", "quote": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or suspend your access to the Spotify Service at any time if we believe you have breached any of these Terms" },
+        { "id": "Sb9", "category": "liability_limitation", "quote": "Spotify has no liability to you, nor any obligation to provide a refund to you, in connection with internet or other Spotify Service outages" },
+        { "id": "Sb10", "category": "other_risk", "quote": "Spotify may assign any or all of these Terms" },
+        { "id": "Sb11", "category": "other_risk", "quote": "may be influenced by commercial considerations, including Spotify's agreements with third parties" },
+        { "id": "Sb12", "category": "liability_limitation", "quote": "IN NO EVENT WILL SPOTIFY, ITS OFFICERS, SHAREHOLDERS, EMPLOYEES, AGENTS, DIRECTORS, SUBSIDIARIES, AFFILIATES, SUCCESSORS, ASSIGNS, SUPPLIERS, OR LICENSORS BE LIABLE FOR (1) ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES" },
+        { "id": "Sb13", "category": "other_risk", "quote": "Feedback is not confidential and may be used by Spotify without restriction and without payment to you" },
+        { "id": "Sb14", "category": "jurisdiction", "quote": "you and Spotify agree to the exclusive jurisdiction of the federal or state courts located in New York, New York" },
+        { "id": "Sb15", "category": "auto_renewal", "quote": "You will be billed on a recurring basis on the first day of each billing period" },
+        { "id": "Sb16", "category": "fee_change", "quote": "Spotify may from time to time make changes to Paid Subscriptions, including recurring subscription fees" }
+      ],
+      "traps": []
+    },
+    "snapchat-privacy": {
+      "must": [
+        { "id": "SN1", "category": "data_collection_tracking", "quote": "device information (such as your device hardware or software, operating system, device memory, advertising identifiers, apps installed, browser type" },
+        { "id": "SN2", "category": "data_collection_tracking", "quote": "device information may also include information about your device phonebook (contacts and related information)" },
+        { "id": "SN3", "category": "data_collection_tracking", "quote": "infer your age or interests based on your content or activity" },
+        { "id": "SN4", "category": "data_collection_tracking", "quote": "if you enable certain face grouping features, we may use information about faces detected in your Memories" },
+        { "id": "SN5", "category": "data_collection_tracking", "quote": "data from advertisers (information from advertisers, app developers, publishers and other third parties to help target or measure the performance of ads)" },
+        { "id": "SN6", "category": "data_collection_tracking", "quote": "we may use information collected on an advertiser’s website to show you more relevant ads" },
+        { "id": "SN7", "category": "data_collection_tracking", "quote": "We use your interests and preferences from the information we’ve collected to personalise, target and measure ads." },
+        { "id": "SN8", "category": "data_sharing", "quote": "We share your information with business and integrated partners in order to provide the Services." },
+        { "id": "SN9", "category": "data_sharing", "quote": "We share your information, such as device and usage information, with industry partners working to prevent fraud." },
+        { "id": "SN10", "category": "data_sharing", "quote": "Your information may be provided to the integrated partner through these integrations, as well as to Snap. We are not responsible for how those partners collect or use your information." },
+        { "id": "SN11", "category": "ai_training_use", "quote": "our algorithms and machine learning models take into account the conversations Snapchatters are having with My AI to improve the responses from My AI" },
+        { "id": "SN12", "category": "data_retention", "quote": "we cannot promise that deletion will take place by a specific time" },
+        { "id": "SN13", "category": "unilateral_change", "quote": "We may change this Privacy Policy from time to time. But when we do, we’ll let you know one way or another. Sometimes, we’ll let you know by revising the date at the top of the Privacy Policy" }
+      ],
+      "borderline": [
+        { "id": "SNb1", "category": "data_collection_tracking", "quote": "information collected by cookies and similar technologies, depending on your settings, (cookies, pixels" },
+        { "id": "SNb2", "category": "data_collection_tracking", "quote": "we automatically tag content with labels based on the content, your location or the time of day" },
+        { "id": "SNb3", "category": "data_collection_tracking", "quote": "precise location information (precise location through methods like GPS signals)" },
+        { "id": "SNb4", "category": "data_sharing", "quote": "we may transfer your information to a successor or affiliate as part of that transaction" },
+        { "id": "SNb5", "category": "data_sharing", "quote": "We may share your information within those internal subsidiaries" },
+        { "id": "SNb6", "category": "data_sharing", "quote": "we may collect your personal information from, transfer it to and store and process it in the United States or other countries outside where you live" },
+        { "id": "SNb7", "category": "data_sharing", "quote": "we may also use or share your information to cooperate with law enforcement requests, escalate safety issues to law enforcement, industry partners or others" },
+        { "id": "SNb8", "category": "data_sharing", "quote": "those Snaps may also be discoverable outside of Snapchat, for example on the web" },
+        { "id": "SNb9", "category": "data_retention", "quote": "we'll retain that location as long as we store the Snap" },
+        { "id": "SNb10", "category": "data_retention", "quote": "if your account, content created by you or content created with other Snapchatters is flagged by others or our systems for abuse or other Terms or policy violations" },
+        { "id": "SNb11", "category": "ai_training_use", "quote": "We also engage in research and development to develop new techniques and technologies (e.g. new machine learning models or hardware, such as SPECS)." },
+        { "id": "SNb12", "category": "data_collection_tracking", "quote": "we may combine that with other information we have about you to better understand who you may want to communicate with" },
+        { "id": "SNb13", "category": "data_collection_tracking", "quote": "create information about our users to help us understand demand" }
+      ],
+      "traps": [
+        { "id": "SNt1", "category": "data_sharing", "quote": "We do not share private content and communications with our service providers to use for their own purposes." },
+        { "id": "SNt2", "category": "data_collection_tracking", "quote": "We do not use the private content and communications you send to people who are your friends to personalise your experience, make recommendations or show you ads." },
+        { "id": "SNt3", "category": "data_sharing", "quote": "we don’t store this information on our servers or share it with third parties" }
+      ]
+    }
+  }
+}

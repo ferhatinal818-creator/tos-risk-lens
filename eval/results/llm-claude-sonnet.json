@@ -1,0 +1,470 @@
+{
+  "summary": {
+    "mode": "llm",
+    "tag": "llm-claude-sonnet",
+    "slack_chars": 150,
+    "documents": 6,
+    "recall_must": 88.3,
+    "recall_must_location_only": 95,
+    "precision": 67.1,
+    "borderline_coverage": 77.6,
+    "trap_rate": 40,
+    "must": 60,
+    "mustCaught": 53,
+    "mustLoc": 4,
+    "border": 67,
+    "borderCaught": 52,
+    "traps": 5,
+    "trapHits": 2,
+    "findings": 155,
+    "tp": 104,
+    "fp": 51,
+    "claimed": 167,
+    "rejected": 0,
+    "quote_rejection_rate": 0
+  },
+  "perDoc": {
+    "mastodon-tos": {
+      "must": 6,
+      "mustCaught": 6,
+      "mustLocOnly": 0,
+      "borderline": 8,
+      "borderCaught": 6,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 16,
+      "truePos": 12,
+      "falsePos": 4,
+      "claimed": 17,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [],
+      "falseAlarms": [
+        {
+          "category": "account_termination",
+          "quote": "You may no longer use the forum if the company contacts you directly to say that you may not.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "You agree to be responsible for all action taken using your account, whether authorized by you or not, until you either close your account or notify …",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "The company may notify you under these terms using the e-mail address you provide for your account on the forum, or by posting a message to the homep…",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "The company last updated these terms on [INSERT LAST UPDATE DATE HERE], and may update these terms again.",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 88
+    },
+    "bereal-tos": {
+      "must": 8,
+      "mustCaught": 8,
+      "mustLocOnly": 0,
+      "borderline": 6,
+      "borderCaught": 4,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 14,
+      "truePos": 13,
+      "falsePos": 1,
+      "claimed": 14,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [],
+      "falseAlarms": [
+        {
+          "category": "consent_by_use",
+          "quote": "If you continue to use our services after the effective date, you accept the updated user agreement.",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 85
+    },
+    "pinterest-tos": {
+      "must": 11,
+      "mustCaught": 10,
+      "mustLocOnly": 0,
+      "borderline": 11,
+      "borderCaught": 10,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 29,
+      "truePos": 19,
+      "falsePos": 10,
+      "claimed": 30,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "P11",
+          "category": "liability_limitation",
+          "quote": "we shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "liability_limitation",
+          "quote": "we are not responsible for or liable to any third party for the content or accuracy of any User Content posted by you or any other Pinterest user",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "Nothing in these Terms: (i) entitles you to any payment or the right to share in any revenue from any monetisation of User Content",
+          "nearTrap": false
+        },
+        {
+          "category": "account_termination",
+          "quote": "We reserve the right to refuse Service to anyone and will provide notice of termination where appropriate.",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "We may make changes to Pinterest for various reasons. We will have no liability for any change to Pinterest or any suspension or termination of your …",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "a Notice of Dispute that asserts the rights of more than one party is ineffective",
+          "nearTrap": false
+        },
+        {
+          "category": "jurisdiction",
+          "quote": "you agree that the US Federal Arbitration Act governs the interpretation and enforcement of this Section",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "you and Pinterest are each waiving the right to a trial by jury or to participate in a class action",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "if 25 or more similar arbitration demands are filed within a 60-day period or with the assistance of the same law firm or group of law firms, AAA wil…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "Your continued access to or use of Pinterest after such an update constitutes your binding acceptance of such changes.",
+          "nearTrap": false
+        },
+        {
+          "category": "data_sharing",
+          "quote": "you agree that any rights and licences granted hereunder benefit Pinterest, Inc. and all of its worldwide subsidiaries and affiliates",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 98
+    },
+    "instagram-tos": {
+      "must": 5,
+      "mustCaught": 3,
+      "mustLocOnly": 1,
+      "borderline": 13,
+      "borderCaught": 12,
+      "traps": 2,
+      "trapHits": 0,
+      "findings": 26,
+      "truePos": 16,
+      "falsePos": 10,
+      "claimed": 27,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "I4",
+          "category": "content_license",
+          "quote": "can be used next to or in connection with accounts, ads (if we show you ads on Meta Products), offers, and other sponsored content that you follow or…",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "I5",
+          "category": "liability_limitation",
+          "quote": "Without limiting any of the above, we shall be liable for slight negligence only in the case of violation of an \"essential\" obligation under this agr…",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "account_termination",
+          "quote": "we may suspend access to Instagram where we determine that you have frequently provided manifestly illegal content",
+          "nearTrap": false
+        },
+        {
+          "category": "data_collection_tracking",
+          "quote": "We use all the information we have-including your information-to try to keep our platform secure.",
+          "nearTrap": false
+        },
+        {
+          "category": "data_collection_tracking",
+          "quote": "Providing our Service requires collecting and using your information.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "Your username, profile picture, and information about your actions (such as likes) or relationships (such as follows) can be used next to or in conne…",
+          "nearTrap": false
+        },
+        {
+          "category": "account_termination",
+          "quote": "We can remove or restrict any content you share on the Service if it violates these Terms of Use or our policies",
+          "nearTrap": false
+        },
+        {
+          "category": "data_retention",
+          "quote": "the content will be retained for no longer than is necessary for the purposes for which it has been retained (the exact duration will vary on a case-…",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "If any of those terms conflict with this agreement, those other terms will govern.",
+          "nearTrap": false
+        },
+        {
+          "category": "liability_limitation",
+          "quote": "in other cases, there is no liability for slight negligence",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "We may change our Service and policies, and we may need to make changes to these Terms so that they accurately reflect our Service and policies.",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "Then, if you continue to access or use the Service you will be bound by the updated Terms.",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 87
+    },
+    "spotify-tos": {
+      "must": 17,
+      "mustCaught": 15,
+      "mustLocOnly": 2,
+      "borderline": 16,
+      "borderCaught": 14,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 47,
+      "truePos": 27,
+      "falsePos": 20,
+      "claimed": 55,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "S8",
+          "category": "liability_limitation",
+          "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT…",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "S17",
+          "category": "other_risk",
+          "quote": "to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify…",
+          "wrongCategoryNearby": true
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "unilateral_change",
+          "quote": "Spotify or the applicable owners may remove access to particular songs, videos, podcasts, audiobooks and other Content without notice.",
+          "nearTrap": false
+        },
+        {
+          "category": "no_refund",
+          "quote": "Spotify has no liability to you, nor any obligation to provide a refund to you, in connection with internet or other Spotify Service outages or failu…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "by continuing to use the Spotify Service after the price change takes effect, you will have accepted the new price",
+          "nearTrap": false
+        },
+        {
+          "category": "fee_change",
+          "quote": "Any change in tax rate will be automatically applied based on the account information you provide.",
+          "nearTrap": false
+        },
+        {
+          "category": "liability_limitation",
+          "quote": "Spotify is not responsible for what you or others post or share on the Spotify Service.",
+          "nearTrap": false
+        },
+        {
+          "category": "content_license",
+          "quote": "such Feedback is not confidential and may be used by Spotify without restriction and without payment to you.",
+          "nearTrap": false
+        },
+        {
+          "category": "data_collection_tracking",
+          "quote": "to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify…",
+          "nearTrap": false
+        },
+        {
+          "category": "data_sharing",
+          "quote": "(2) to provide advertising and other information to you, and (3) to allow our business partners to do the same.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT…",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "the owners of the Content and certain distributors (such as app store providers) are intended beneficiaries of these Terms and have the right to enfo…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "THERE IS NO JUDGE OR JURY IN ARBITRATION, AND COURT REVIEW OF AN ARBITRATION AWARD IS LIMITED.",
+          "nearTrap": false
+        },
+        {
+          "category": "jurisdiction",
+          "quote": "shall be brought in the federal courts of New York, New York",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "set forth the alleged damage and harm suffered and the specific relief sought with a calculation for it.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "the parties agree to engage in good faith for a period of sixty (60) days in an effort to resolve the Dispute",
+          "nearTrap": false
+        },
+        {
+          "category": "jurisdiction",
+          "quote": "in the federal or state courts of New York, New York",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "each party may bring a Dispute against the other party only in an individual capacity and not participate as a plaintiff, claimant, or class member i…",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "We may make changes to these Terms (including any additional Spotify terms and conditions incorporated by reference herein) from time to time by noti…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "Your use of the Spotify Service following any changes to these Terms will constitute your acceptance of such changes.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "Such an opt-out must be sent by you personally from your personal email address, and not by your agent, attorney, or anyone else purporting to act on…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agree that any Dispute will be determined by binding individua…",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 100
+    },
+    "snapchat-privacy": {
+      "must": 13,
+      "mustCaught": 11,
+      "mustLocOnly": 1,
+      "borderline": 13,
+      "borderCaught": 6,
+      "traps": 3,
+      "trapHits": 2,
+      "findings": 23,
+      "truePos": 17,
+      "falsePos": 6,
+      "claimed": 24,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "SN3",
+          "category": "data_collection_tracking",
+          "quote": "infer your age or interests based on your content or activity",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN10",
+          "category": "data_sharing",
+          "quote": "Your information may be provided to the integrated partner through these integrations, as well as to Snap. We are not responsible for how those partn…",
+          "wrongCategoryNearby": true
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "data_collection_tracking",
+          "quote": "we process your information to provide you a more personalised experience, including to show you content and information that is most relevant to you…",
+          "nearTrap": false
+        },
+        {
+          "category": "data_collection_tracking",
+          "quote": "we may use information about faces in your Memories to improve search, organisation and personalisation in Memories",
+          "nearTrap": false
+        },
+        {
+          "category": "ai_training_use",
+          "quote": "we also develop and improve the algorithms and machine learning models",
+          "nearTrap": false
+        },
+        {
+          "category": "liability_limitation",
+          "quote": "We are not responsible for how those partners collect or use your information.",
+          "nearTrap": false
+        },
+        {
+          "category": "other_risk",
+          "quote": "we may collect your personal information from, transfer it to and store and process it in the United States or other countries outside where you live.",
+          "nearTrap": false
+        },
+        {
+          "category": "data_collection_tracking",
+          "quote": "We may use age-assurance measures, including automated tools, to help determine whether users meet minimum age requirements or should receive age-app…",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [
+        {
+          "id": "SNt1",
+          "quote": "We do not share private content and communications with our service providers to use for their own purposes."
+        },
+        {
+          "id": "SNt2",
+          "quote": "We do not use the private content and communications you send to people who are your friends to personalise your experience, make recommendations or …"
+        }
+      ],
+      "rejectedExamples": [],
+      "score": 94
+    }
+  }
+}

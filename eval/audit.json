@@ -1,0 +1,68 @@
+{
+  "note": "SONRADAN (model çıktıları görüldükten sonra), tek kişi (Claude) tarafından yapılmış ÖZNEL denetim. Katı metrik gold.json'a göredir; bu dosya yalnızca 'altın etiketim eksik miydi?' sorusuna ışık tutar. defensible = makul bir inceleyicinin tüketici aleyhine sayacağı madde (altın etiket boşluğu ya da kategori uyuşmazlığı); false_alarm = nötr/koruyucu/risksiz ifade.",
+  "verdicts": {
+    "mastodon-tos": [
+      ["You may no longer use the forum if the company contacts you", "defensible"],
+      ["You agree to be responsible for all action taken using your account", "defensible"],
+      ["The company may notify you under these terms using the e-mail", "false_alarm"],
+      ["The company last updated these terms on", "false_alarm"]
+    ],
+    "bereal-tos": [
+      ["If you continue to use our services after the effective date", "defensible"]
+    ],
+    "pinterest-tos": [
+      ["we are not responsible for or liable to any third party", "false_alarm"],
+      ["Nothing in these Terms: (i) entitles you to any payment", "defensible"],
+      ["We reserve the right to refuse Service to anyone", "defensible"],
+      ["We may make changes to Pinterest for various reasons", "defensible"],
+      ["a Notice of Dispute that asserts the rights of more than one party", "defensible"],
+      ["you agree that the US Federal Arbitration Act governs", "false_alarm"],
+      ["each waiving the right to a trial by jury", "defensible"],
+      ["if 25 or more similar arbitration demands", "defensible"],
+      ["Your continued access to or use of Pinterest after such an update", "defensible"],
+      ["you agree that any rights and licences granted hereunder benefit", "false_alarm"]
+    ],
+    "instagram-tos": [
+      ["we may suspend access to Instagram where we determine", "defensible"],
+      ["We use all the information we have", "defensible"],
+      ["Providing our Service requires collecting and using your information", "false_alarm"],
+      ["Your username, profile picture, and information about your actions", "defensible"],
+      ["We can remove or restrict any content you share", "false_alarm"],
+      ["the content will be retained for no longer than is necessary", "false_alarm"],
+      ["If any of those terms conflict with this agreement", "false_alarm"],
+      ["in other cases, there is no liability for slight negligence", "defensible"],
+      ["We may change our Service and policies", "false_alarm"],
+      ["Then, if you continue to access or use the Service you will be bound", "defensible"]
+    ],
+    "spotify-tos": [
+      ["Spotify or the applicable owners may remove access", "defensible"],
+      ["Spotify has no liability to you, nor any obligation to provide a refund", "defensible"],
+      ["by continuing to use the Spotify Service after the price change", "defensible"],
+      ["Any change in tax rate will be automatically applied", "false_alarm"],
+      ["Spotify is not responsible for what you or others post", "defensible"],
+      ["such Feedback is not confidential", "defensible"],
+      ["to allow the Spotify Service to use the processor, bandwidth", "defensible"],
+      ["to provide advertising and other information to you", "defensible"],
+      ["ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED", "defensible"],
+      ["the owners of the Content and certain distributors", "false_alarm"],
+      ["THERE IS NO JUDGE OR JURY IN ARBITRATION", "defensible"],
+      ["shall be brought in the federal courts of New York", "defensible"],
+      ["set forth the alleged damage and harm suffered", "false_alarm"],
+      ["the parties agree to engage in good faith for a period of sixty", "false_alarm"],
+      ["in the federal or state courts of New York, New York", "defensible"],
+      ["each party may bring a Dispute against the other party only in an individual capacity", "defensible"],
+      ["We may make changes to these Terms (including any additional", "defensible"],
+      ["Your use of the Spotify Service following any changes", "defensible"],
+      ["Such an opt-out must be sent by you personally", "false_alarm"],
+      ["Even if you opt out of a material change to the Arbitration Agreement", "defensible"]
+    ],
+    "snapchat-privacy": [
+      ["we process your information to provide you a more personalised experience", "false_alarm"],
+      ["we may use information about faces in your Memories", "defensible"],
+      ["we also develop and improve the algorithms and machine learning models", "defensible"],
+      ["We are not responsible for how those partners collect or use your information", "defensible"],
+      ["we may collect your personal information from, transfer it to and store", "defensible"],
+      ["We may use age-assurance measures", "false_alarm"]
+    ]
+  }
+}

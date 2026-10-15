@@ -1,0 +1,600 @@
+{
+  "summary": {
+    "mode": "rules",
+    "tag": "rules",
+    "slack_chars": 150,
+    "documents": 6,
+    "recall_must": 41.7,
+    "recall_must_location_only": 50,
+    "precision": 53.3,
+    "borderline_coverage": 19.4,
+    "trap_rate": 60,
+    "must": 60,
+    "mustCaught": 25,
+    "mustLoc": 5,
+    "border": 67,
+    "borderCaught": 13,
+    "traps": 5,
+    "trapHits": 3,
+    "findings": 90,
+    "tp": 48,
+    "fp": 42,
+    "claimed": 0,
+    "rejected": 0,
+    "quote_rejection_rate": null
+  },
+  "perDoc": {
+    "mastodon-tos": {
+      "must": 6,
+      "mustCaught": 3,
+      "mustLocOnly": 0,
+      "borderline": 8,
+      "borderCaught": 1,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 7,
+      "truePos": 4,
+      "falsePos": 3,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "M2",
+          "category": "liability_limitation",
+          "quote": "the total liability to you for claims of any kind that are related to the forum or content on the forum will be limited to $50",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "M3",
+          "category": "liability_limitation",
+          "quote": "You accept all risk of using the forum and content on the forum. As far as the law allows, the company and its suppliers provide the forum as is, wit…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "M5",
+          "category": "jurisdiction",
+          "quote": "German law will govern any dispute related to these terms or your use of the forum.",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "indemnification",
+          "quote": "If the company fails to notify you of a legal claim promptly, you won’t have to indemnify the company for damages that you could have defended agains…",
+          "nearTrap": false
+        },
+        {
+          "category": "indemnification",
+          "quote": "You agree to allow the company to control investigation, defense, and settlement of legal claims for which you would have to indemnify the company, a…",
+          "nearTrap": false
+        },
+        {
+          "category": "unilateral_change",
+          "quote": "The company last updated these terms on [INSERT LAST UPDATE DATE HERE], and may update these terms again.",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 74
+    },
+    "bereal-tos": {
+      "must": 8,
+      "mustCaught": 4,
+      "mustLocOnly": 2,
+      "borderline": 6,
+      "borderCaught": 1,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 10,
+      "truePos": 7,
+      "falsePos": 3,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "B2",
+          "category": "data_sharing",
+          "quote": "we must collect, use, store, process, share and transfer this information in the countries where we operate our services and to the partners who help…",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "B6",
+          "category": "unilateral_change",
+          "quote": "BeReal may update the user agreement at any time.",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "B7",
+          "category": "consent_by_use",
+          "quote": "if you use our services, you agree to be bound by the terms of service",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "B8",
+          "category": "account_termination",
+          "quote": "BeReal reserves the right to permanently delete your account in the event of prolonged inactivity.",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "account_termination",
+          "quote": "You can delete your BeReal account at any time through the Application settings by selecting the account deletion option.",
+          "nearTrap": false
+        },
+        {
+          "category": "content_license",
+          "quote": "During the period of your use of our services, BeReal grants you a personal, worldwide, royalty-free, non-transferable and non-exclusive licence to u…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "By using our services, you agree that the liability of BeReal, its affiliates, related companies, officers, directors, employees, agents, representat…",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 78
+    },
+    "pinterest-tos": {
+      "must": 11,
+      "mustCaught": 7,
+      "mustLocOnly": 0,
+      "borderline": 11,
+      "borderCaught": 1,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 17,
+      "truePos": 11,
+      "falsePos": 6,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "P2",
+          "category": "data_collection_tracking",
+          "quote": "we show you things we think will be relevant, interesting and personal to you based on your on-site and off-site activity",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "P3",
+          "category": "data_retention",
+          "quote": "We and our users may retain and continue to use, store, display, reproduce, save, modify, create derivative works, perform and distribute any of your…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "P8",
+          "category": "unilateral_change",
+          "quote": "We may revise, add or remove any or all portions of these Terms from time to time",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "P9",
+          "category": "account_termination",
+          "quote": "We reserve the right to remove, limit distribution of or modify User Content, or change the way it’s used on Pinterest.",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "content_license",
+          "quote": "Subject to your compliance with these Terms and our policies, we hereby grant you a limited, non-exclusive, non-transferable, non-sublicensable and r…",
+          "nearTrap": false
+        },
+        {
+          "category": "account_termination",
+          "quote": "You can also terminate or delete your account at any time.",
+          "nearTrap": false
+        },
+        {
+          "category": "liability_limitation",
+          "quote": "This limitation of liability won't apply to any statutory liability that cannot be limited, to liability for death or personal injury caused by our n…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "The arbitrator also has exclusive authority to resolve any dispute relating to the interpretation, applicability or enforceability of this binding ar…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "For clarity, by continuing to use Pinterest, you are agreeing to be bound by the then-current version of these Terms.",
+          "nearTrap": false
+        },
+        {
+          "category": "content_license",
+          "quote": "As Pinterest is a worldwide service, you agree that any rights and licences granted hereunder benefit Pinterest, Inc.",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 94
+    },
+    "instagram-tos": {
+      "must": 5,
+      "mustCaught": 1,
+      "mustLocOnly": 0,
+      "borderline": 13,
+      "borderCaught": 0,
+      "traps": 2,
+      "trapHits": 2,
+      "findings": 4,
+      "truePos": 1,
+      "falsePos": 3,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "I1",
+          "category": "data_sharing",
+          "quote": "Instagram is part of the Meta Companies, which share technology, systems, insights, and information-including the information we have about you",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "I2",
+          "category": "data_collection_tracking",
+          "quote": "we use information from Instagram and other Meta Company Products, as well as from external partners, to personalize your experience on Instagram",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "I4",
+          "category": "content_license",
+          "quote": "can be used next to or in connection with accounts, ads (if we show you ads on Meta Products), offers, and other sponsored content that you follow or…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "I5",
+          "category": "liability_limitation",
+          "quote": "Without limiting any of the above, we shall be liable for slight negligence only in the case of violation of an \"essential\" obligation under this agr…",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "data_sharing",
+          "quote": "We don't sell your information.",
+          "nearTrap": true
+        },
+        {
+          "category": "data_sharing",
+          "quote": "We also provide advertisers with reports about the performance of their ads to help them understand how people are interacting with their content on …",
+          "nearTrap": true
+        },
+        {
+          "category": "data_sharing",
+          "quote": "For example, we provide general demographic and interest information to advertisers to help them better understand their audience.",
+          "nearTrap": true
+        }
+      ],
+      "trapsFallenFor": [
+        {
+          "id": "It1",
+          "quote": "We don't sell your information."
+        },
+        {
+          "id": "It2",
+          "quote": "We don’t share information that directly identifies you"
+        }
+      ],
+      "rejectedExamples": [],
+      "score": 76
+    },
+    "spotify-tos": {
+      "must": 17,
+      "mustCaught": 8,
+      "mustLocOnly": 3,
+      "borderline": 16,
+      "borderCaught": 6,
+      "traps": 0,
+      "trapHits": 0,
+      "findings": 42,
+      "truePos": 19,
+      "falsePos": 23,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "S1",
+          "category": "consent_by_use",
+          "quote": "By signing up for, or otherwise using, the Spotify Service, you agree to these Terms.",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "S2",
+          "category": "arbitration_class_waiver",
+          "quote": "will be determined by binding individual (not class) arbitration",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S7",
+          "category": "liability_limitation",
+          "quote": "AGGREGATE LIABILITY FOR ALL CLAIMS RELATING TO THE SPOTIFY SERVICE, THIRD-PARTY APPLICATIONS, OR THIRD-PARTY APPLICATION CONTENT MORE THAN THE GREATE…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S8",
+          "category": "liability_limitation",
+          "quote": "ANY CLAIM ARISING UNDER THESE TERMS MUST BE COMMENCED (BY FILING A DEMAND OR FILING AN INDIVIDUAL ACTION AS SPECIFIED UNDER THE ARBITRATION AGREEMENT…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S11",
+          "category": "auto_renewal",
+          "quote": "Paid Subscriptions continue indefinitely until cancelled.",
+          "wrongCategoryNearby": true
+        },
+        {
+          "id": "S14",
+          "category": "unilateral_change",
+          "quote": "Spotify reserves the right to change our Spotify Service offerings and their availability from time to time, without notice or liability to you.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S15",
+          "category": "unilateral_change",
+          "quote": "Your use of the Spotify Service following any changes to these Terms will constitute your acceptance of such changes.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S16",
+          "category": "account_termination",
+          "quote": "Spotify reserves the right to remove or disable access to any User Content for any or no reason.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "S17",
+          "category": "other_risk",
+          "quote": "to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to facilitate the operation of the Spotify…",
+          "wrongCategoryNearby": true
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "unilateral_change",
+          "quote": "Please refer to Section 7 below for information about those additional terms and how we may change these Terms or the additional terms incorporated b…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "By using a Spotify Service via a Trial, you agree to the Spotify Paid Subscription Terms.",
+          "nearTrap": false
+        },
+        {
+          "category": "account_termination",
+          "quote": "Spotify has no obligation to provide any specific content through the Spotify Service, and Spotify or the applicable owners may remove access to part…",
+          "nearTrap": false
+        },
+        {
+          "category": "data_retention",
+          "quote": "The Spotify software applications and the Content are licensed, not sold or transferred to you, and Spotify and its licensors retain ownership of all…",
+          "nearTrap": false
+        },
+        {
+          "category": "auto_renewal",
+          "quote": "Spotify may from time to time make changes to Paid Subscriptions, including recurring subscription fees, the Prepaid Period (for periods not yet paid…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "Price changes will take effect at the start of the next subscription period following the date of the price change and, by continuing to use the Spot…",
+          "nearTrap": false
+        },
+        {
+          "category": "data_retention",
+          "quote": "Unless otherwise indicated (for example, if you have signed up for a Prepaid Period), Paid Subscriptions continue indefinitely until cancelled.",
+          "nearTrap": false
+        },
+        {
+          "category": "data_sharing",
+          "quote": "You also grant to us the right (1) to allow the Spotify Service to use the processor, bandwidth, and storage hardware on your Device in order to faci…",
+          "nearTrap": false
+        },
+        {
+          "category": "consent_by_use",
+          "quote": "By using Spotify Community, you agree to the Community Terms.",
+          "nearTrap": false
+        },
+        {
+          "category": "account_termination",
+          "quote": "You may terminate these Terms at any time, in which case you may not continue accessing or using the Spotify Service. To learn how to terminate your …",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "[](#governing-law-jurisdiction-class-action-waiver-and-jury-trial-waiver)Governing law, jurisdiction, class action waiver, and jury trial waiver",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "ity, and enforceability of this Arbitration Agreement, including, but not limited to, any Dispute over the applicable version of the Arbitration Agre…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "You and Spotify both agree that any Dispute relating to any actual or alleged infringement of your or Spotify's intellectual property rights shall be…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "small claims court (so long as the action is litigated exclusively in small claims court and is not removed or appealed to a court of general jurisdi…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "Nor does this Arbitration Agreement preclude you or us from entering into or participating in a class-wide, collective, or representative settlement …",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "[](#no-class-or-representative-proceedings-and-class-action-waiver)No class or representative proceedings and class action waiver",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "YOU AND SPOTIFY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER IN ARBITRATION OR LITIGATION ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A …",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "First Stage: In the first stage, counsel for the parties shall each select twenty-five (25) cases per side (50 cases total) to be filed in arbitratio…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "In the meantime, any remaining cases shall not be filed or deemed filed in arbitration, nor shall any Arbitration Fees be assessed in connection with…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "You may opt out of arbitration by providing an individual, personally signed notice of your intention to opt out of arbitration to Spotify via email …",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "Any remaining cases shall not be filed or deemed filed in arbitration, nor shall any Arbitration Fees be assessed in connection with those cases unle…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "small claims court or in the federal or state courts of New York, New York, consistent with the \"Governing law, jurisdiction, class action waiver, an…",
+          "nearTrap": false
+        },
+        {
+          "category": "arbitration_class_waiver",
+          "quote": "Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agree that any Dispute will be determined by binding individua…",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [],
+      "rejectedExamples": [],
+      "score": 100
+    },
+    "snapchat-privacy": {
+      "must": 13,
+      "mustCaught": 2,
+      "mustLocOnly": 0,
+      "borderline": 13,
+      "borderCaught": 4,
+      "traps": 3,
+      "trapHits": 1,
+      "findings": 10,
+      "truePos": 6,
+      "falsePos": 4,
+      "claimed": null,
+      "rejectedByVerifier": 0,
+      "missingOutputs": 0,
+      "invalidChunks": 0,
+      "missed": [
+        {
+          "id": "SN1",
+          "category": "data_collection_tracking",
+          "quote": "device information (such as your device hardware or software, operating system, device memory, advertising identifiers, apps installed, browser type",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN3",
+          "category": "data_collection_tracking",
+          "quote": "infer your age or interests based on your content or activity",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN4",
+          "category": "data_collection_tracking",
+          "quote": "if you enable certain face grouping features, we may use information about faces detected in your Memories",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN5",
+          "category": "data_collection_tracking",
+          "quote": "data from advertisers (information from advertisers, app developers, publishers and other third parties to help target or measure the performance of …",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN6",
+          "category": "data_collection_tracking",
+          "quote": "we may use information collected on an advertiser’s website to show you more relevant ads",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN7",
+          "category": "data_collection_tracking",
+          "quote": "We use your interests and preferences from the information we’ve collected to personalise, target and measure ads.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN8",
+          "category": "data_sharing",
+          "quote": "We share your information with business and integrated partners in order to provide the Services.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN9",
+          "category": "data_sharing",
+          "quote": "We share your information, such as device and usage information, with industry partners working to prevent fraud.",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN10",
+          "category": "data_sharing",
+          "quote": "Your information may be provided to the integrated partner through these integrations, as well as to Snap. We are not responsible for how those partn…",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN12",
+          "category": "data_retention",
+          "quote": "we cannot promise that deletion will take place by a specific time",
+          "wrongCategoryNearby": false
+        },
+        {
+          "id": "SN13",
+          "category": "unilateral_change",
+          "quote": "We may change this Privacy Policy from time to time. But when we do, we’ll let you know one way or another. Sometimes, we’ll let you know by revising…",
+          "wrongCategoryNearby": false
+        }
+      ],
+      "falseAlarms": [
+        {
+          "category": "ai_training_use",
+          "quote": "Develop & Improve Features, Algorithms & Machine Learning Models",
+          "nearTrap": false
+        },
+        {
+          "category": "ai_training_use",
+          "quote": "In order to do this, we also develop and improve the algorithms and machine learning models (an expression of an algorithm that combs through signifi…",
+          "nearTrap": false
+        },
+        {
+          "category": "ai_training_use",
+          "quote": "Our AI features typically use generative AI (artificial intelligence capable of generating text, images or other media, using generative models).",
+          "nearTrap": false
+        },
+        {
+          "category": "ai_training_use",
+          "quote": "Generative AI models learn the patterns and structure of their input training data and then generate new data that has similar characteristics).",
+          "nearTrap": false
+        }
+      ],
+      "trapsFallenFor": [
+        {
+          "id": "SNt3",
+          "quote": "we don’t store this information on our servers or share it with third parties"
+        }
+      ],
+      "rejectedExamples": [],
+      "score": 93
+    }
+  }
+}

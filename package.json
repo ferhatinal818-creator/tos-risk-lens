@@ -1,0 +1,33 @@
+{
+  "name": "tos-risk-lens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kullanım koşulları / gizlilik politikası / abonelik şartlarını yakalayıp doğrulanmış (alıntılı) bir risk raporu üreten Chrome uzantısı",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"test/**/*.test.js\"",
+    "corpus": "node eval/fetch-corpus.mjs",
+    "eval:rules": "node eval/run-eval.mjs --mode rules",
+    "eval:prepare": "node eval/prepare-llm-runs.mjs",
+    "eval:llm": "node eval/run-eval.mjs --mode llm",
+    "eval:live": "node eval/live-llm.mjs",
+    "demo:serve": "node scripts/serve.mjs",
+    "cy:open": "npm run build && cypress open",
+    "cy:run": "npm run build && cypress run --spec cypress/e2e/demo.cy.js",
+    "browser:check": "npm run build && node scripts/browser-check.mjs",
+    "eval:stress": "node eval/stress-verifier.mjs",
+    "eval:all": "node eval/run-eval.mjs --mode rules && node eval/run-eval.mjs --mode llm --tag llm-claude-sonnet && node eval/stress-verifier.mjs && node eval/report.mjs",
+    "cy:agent": "npm run build && cypress run --spec cypress/e2e/agent.cy.js"
+  },
+  "dependencies": {
+    "page-agent": "1.12.4",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "cypress": "^15.0.0",
+    "esbuild": "^0.28.0",
+    "jsdom": "^26.0.0"
+  }
+}
